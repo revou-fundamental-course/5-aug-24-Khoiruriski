@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="app.css"> <!-- Tautan ke file CSS -->
+</head>
+<body>
+
+    <div class="header">
+        <img src="Logo Project.png" alt="Logo">
+        <h1>KALKULATOR <span>BMI</span> SEDERHANA</h1>
+        <img src="Logo-RevoU-5_1.original.png" alt="Logo">
+
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Apa Itu BMI?</h2>
+            <p>Body Mass Index (BMI) adalah metode yang digunakan untuk mengukur apakah berat badan Anda sesuai dengan tinggi badan Anda. BMI merupakan indikator penting untuk mengetahui apakah seseorang memiliki berat badan yang sehat, kurang, atau berlebih.</p>
+        </div>
+
+        <div class="main-content">
+            <div class="calculator">
+                <label for="gender">Apa Jenis Kelamin Anda ? </label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan" checked> Perempuan</label>
+                </div>
+
+                <label for="age">Berapa Usia Anda ?</label>
+                <input type="number" id="age" placeholder="Masukkan usia">
+
+                <label for="weight"> Berapa Berat Badan Anda ? (kg)</label>
+                <input type="number" id="weight" placeholder="Masukkan berat badan">
+
+                <label for="height">Berapa Tinggi Badan Anda ? (cm)</label>
+                <input type="number" id="height" placeholder="Masukkan tinggi badan">
+
+                <div class="button-group">
+                    <button class="btn-calculate" onclick="calculateBMI()">Hitung BMI</button>
+                    <button class="btn-reset" onclick="resetForm()">Reset</button>
+                </div>
+                <div class="result" id="result"></div>
+
+                <div class="suggestion" id="suggestion">
+                    <h2>Saran Kesehatan</h2>
+                    <p>Masukkan data Anda untuk mendapatkan saran kesehatan berdasarkan BMI Anda.</p>
+                </div>
+            </div>
+
+            <aside>
+                <h2>Bagaimana Membaca Hasil BMI Anda?</h2>
+                <ul>
+                    <li><strong>Kurang dari 18.5:</strong> Kurus (Berat Badan Kurang)</li>
+                    <li><strong>18.5 - 24.9:</strong> Normal (Berat Badan Ideal)</li>
+                    <li><strong>25 - 29.9:</strong> Kelebihan Berat Badan (Pra-obesitas)</li>
+                    <li><strong>30 - 34.9:</strong> Obesitas Kelas I</li>
+                    <li><strong>35 - 39.9:</strong> Obesitas Kelas II</li>
+                    <li><strong>40 atau lebih:</strong> Obesitas Kelas III (Obesitas Morbid)</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Belajar Membuat Web Responsif BMI By Revo U </p>
+    </div>
+
+    <script src="app.js"></script> <!-- Tautan ke file JavaScript -->
+    
+</body>
+</html>
